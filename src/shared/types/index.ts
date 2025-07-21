@@ -46,6 +46,20 @@ export interface Experience {
   url?: string;
 }
 
+export interface Certificate {
+  id: string;
+  title: string;
+  description: string;
+  issuer: string;
+  issuerLogo: string;
+  certifiedDate: string;
+  expiryDate: string | null;
+  verificationCode: string;
+  verificationUrl?: string;
+  certificateImage: string;
+  credentialId?: string;
+}
+
 export interface ContactInfo {
   email: string;
   telegram: string;

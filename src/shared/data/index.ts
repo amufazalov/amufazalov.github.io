@@ -1,18 +1,34 @@
-import { PersonalInfo, Project, Skill, Experience } from '../types';
+import { PersonalInfo, Project, Skill, Experience, Certificate } from '../types';
 
 export const personalInfo: PersonalInfo = {
-  name: 'Александр Мухамедов',
+  name: 'Айрат Муфазалов',
   title: 'Fullstack Разработчик',
-  photo: '/images/developer-photo.jpg',
+  photo: '/images/hero/me-white_square.png',
   bio: 'Опытный fullstack разработчик с 5+ годами опыта создания современных веб-приложений. Специализируюсь на React, TypeScript, PHP, Laravel и создании масштабируемых решений.',
   yearsOfExperience: 5,
   contact: {
     email: 'contact@example.com',
-    telegram: '@alexdev',
-    vk: 'https://vk.com/alexdev',
+    telegram: '@ayratdev',
+    vk: 'https://vk.com/ayratdev',
     whatsapp: '+7-900-123-45-67'
   }
 };
+
+export const certificates: Certificate[] = [
+  {
+    id: '1',
+    title: 'Adobe Certified Expert - Adobe Commerce Developer',
+    description: 'Профессиональная сертификация Adobe, подтверждающая экспертный уровень владения технологиями Adobe Commerce (Magento 2). Сертификат демонстрирует глубокие знания в области разработки e-commerce решений, настройки модулей, работы с API, оптимизации производительности и интеграции сторонних сервисов.',
+    issuer: 'Adobe',
+    issuerLogo: '/images/certificates/adobe-logo.png',
+    certifiedDate: '2021-12-19',
+    expiryDate: '2023-12-19',
+    verificationCode: 'DN8CXWG1CB4QZWV',
+    verificationUrl: 'https://www.certmetrics.com/adobe/public/verification.aspx',
+    certificateImage: '/images/certificates/Magento2.png',
+    credentialId: 'DN8CXWG1CB4QZWV'
+  }
+];
 
 export const skills: Skill[] = [
   { name: 'React', level: 95, category: 'frontend', icon: '⚛️' },
@@ -26,7 +42,7 @@ export const skills: Skill[] = [
   { name: 'Prisma ORM', level: 85, category: 'database', icon: '🔹' },
   { name: 'TypeORM', level: 80, category: 'database', icon: '🗄️' },
   { name: 'Python', level: 70, category: 'backend', icon: '🐍' },
-  { name: 'Magento 2', level: 75, category: 'other', icon: '🛒' },
+  { name: 'Magento 2', level: 85, category: 'other', icon: '🛒' },
   { name: 'ReadyScript', level: 70, category: 'other', icon: '📦' },
   { name: 'Bitrix', level: 75, category: 'other', icon: '🅱️' },
   { name: 'Bitrix24', level: 72, category: 'other', icon: '📊' },
