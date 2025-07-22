@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../../shared/data';
 import { Technology } from '../../shared/types';
 import { ContactSection } from '../../widgets/contact-section'; 
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+ 
 export const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
+
+  // Хуки должны быть здесь, до любых условий
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   if (!project) {
     return (
@@ -126,15 +132,34 @@ export const ProjectDetailPage: React.FC = () => {
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Галерея</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {project.images.map((image: string, index: number) => (
-                      <div key={index} className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+                      <div
+                        key={index}
+                        className="aspect-video bg-gray-200 rounded-lg overflow-hidden"
+                        onClick={() => {
+                          setLightboxIndex(index);
+                          setLightboxOpen(true);
+                        }}
+                        style={{ cursor: 'pointer' }}
+                      >
                         <img
                           src={image}
                           alt={`${project.title} скриншот ${index + 1}`}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform cursor-pointer"
+                          aria-label={`${project.title} скриншот ${index + 1}`}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform"
                         />
                       </div>
                     ))}
                   </div>
+                  <Lightbox
+                    open={lightboxOpen}
+                    close={() => setLightboxOpen(false)}
+                    slides={project.images.map((image: string) => ({ 
+                      src: image.replace('screenshot_764x430_', 'screenshot_full_').replace('.webp', '.png'),
+                      description: `${project.title} скриншот`,
+                      loading: 'lazy'
+                    }))}
+                    index={lightboxIndex}
+                  />
                 </div>
               )}
             </div>
