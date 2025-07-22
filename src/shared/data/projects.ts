@@ -16,8 +16,9 @@ export const projects: Project[] = [
       { name: 'LESS', category: 'frontend' }
     ],
     company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
-    image: '',
+    image: '/images/magento2-module.jpeg',
     images: [],
+    siteUrl: 'https://docs.scommerce-mage.com/magento-2-extensions/user-experience-extensions/magento-2-ajax-login-and-add-to-wishlist',
     period: { start: 'Март 2023', end: 'Апрель 2023' },
     features: [
       'AJAX авторизация через модальное окно',
@@ -212,8 +213,8 @@ export const projects: Project[] = [
   },
   {
     id: '8',
-    slug: 'slots-and-game-lobby',
-    title: 'Слоты и игровое лобби (2022–н.в.)',
+    slug: 'stars-deluxe-slots-and-game-lobby',
+    title: 'Starsdeluxe.net - Слоты и игровое лобби',
     description: 'Разработка платформы для онлайн-слотов: реверс-инжиниринг слотов (Wazdan, Pragmatic, Greentube и др.), написание универсального адаптера, API и лобби на React. Создание Telegram-бота для статистики и управления. Интеграция с Unity и сторонними слотами. Работа в роли тимлида.',
     shortDescription: 'Игровая платформа: Node.js, React, адаптеры и слоты',
     type: 'Game Platform',
@@ -228,9 +229,16 @@ export const projects: Project[] = [
       { name: 'Unity', category: 'frontend' }
     ],
     company: { name: 'Mageinn', logo: '/images/companies/mageinn-logo.webp', url: 'https://mageinn.com' },
-    image: '',
-    images: [],
-    siteUrl: 'null',
+    image: '/images/projects/starsdeluxe.net/picture2.png',
+    images: [
+      '/images/projects/starsdeluxe.net/picture1.png',
+      '/images/projects/starsdeluxe.net/picture2.png',
+      '/images/projects/starsdeluxe.net/picture3.png',
+      '/images/projects/starsdeluxe.net/picture4.png',
+      '/images/projects/starsdeluxe.net/picture5.png',
+      '/images/projects/starsdeluxe.net/picture6.png',
+    ],
+    siteUrl: 'https://starsdeluxe.net/',
     period: { start: 'Май 2022', end: 'Ноябрь 2023' },
     features: [
       'Реверс-инжиниринг игровых слотов',
@@ -402,6 +410,59 @@ export const projects: Project[] = [
       'Редизайн отдельных страниц',
       'Расширение текущих модулей',
       'UX-оптимизация'
+    ]
+  },
+  {
+    id: '15',
+    slug: 'magento-2-associated-products-stock-update',
+    title: 'Associated Products Stock Update',
+    description: 'Модуль для Magento 2, который автоматизирует управление остатками связанных товаров. Синхронизирует количество на складе между основным и ассоциированными товарами, поддерживает гибкую настройку ассоциаций, импорт/экспорт CSV, логирование и расширяемость.',
+    shortDescription: 'Автоматизация остатков связанных товаров в Magento 2',
+    type: 'Magento 2 Module',
+    technologies: [
+      { name: 'Magento 2', category: 'backend' },
+      { name: 'PHP', category: 'backend' },
+    ],
+    company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
+    image: '/images/magento2-module.jpeg',
+    images: [],
+    siteUrl: 'https://docs.scommerce-mage.com/magento-2-extensions/admin-extensions/magento-2-associated-or-linked-product-stock-update',
+    period: { start: '2023', end: '2023' },
+    features: [
+      'Автоматическое обновление остатков при отгрузках и возвратах',
+      'Гибкая настройка ассоциаций товаров',
+      'UI-компонент для управления ассоциациями',
+      'Импорт и экспорт ассоциаций через CSV',
+      'Логирование операций',
+      'Расширяемость и интеграция с другими модулями'
+    ]
+  },
+  {
+    id: '16',
+    slug: 'magento-2-seo-hreflang',
+    title: 'Magento 2 SEO Hreflang',
+    description: 'Модуль для Magento 2, который автоматически добавляет hreflang-теги на страницы сайта для улучшения SEO мультиязычных и мультирегиональных магазинов. Гибкая настройка, поддержка всех типов страниц, мультистор, расширяемость.',
+    shortDescription: 'Автоматизация hreflang для Magento 2',
+    type: 'Magento 2 Module',
+    technologies: [
+      { name: 'Magento 2', category: 'backend' },
+      { name: 'PHP', category: 'backend' },
+      { name: 'DI', category: 'backend' },
+      { name: 'Layout', category: 'frontend' },
+      { name: 'Template', category: 'frontend' }
+    ],
+    company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
+    image: '/images/magento2-module.jpeg',
+    images: [],
+    siteUrl: undefined,
+    period: { start: '2023', end: '2023' },
+    features: [
+      'Автоматическая генерация hreflang-тегов',
+      'Поддержка категорий, товаров и CMS-страниц',
+      'Гибкая настройка через админ-панель',
+      'Совместимость с мультистор-структурой',
+      'Расширяемость через интерфейсы',
+      'Улучшение SEO для мультиязычных сайтов'
     ]
   }
 ];
