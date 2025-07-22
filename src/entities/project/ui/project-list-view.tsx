@@ -35,9 +35,14 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
         <div className="lg:w-2/3">
           <div className="flex justify-between items-start mb-3">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                {project.title}
-              </h3>
+              <Link 
+                to={`/projects/${project.slug}`}
+                className="block cursor-pointer hover:text-primary-600 transition-colors"
+              >
+                <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                  {project.title}
+                </h3>
+              </Link>
               <p className="text-primary-600 font-semibold">{project.type}</p>
             </div>
             <span className="text-sm text-gray-500 whitespace-nowrap">
@@ -53,7 +58,7 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800"
+                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-primary-100 text-primary-800"
               >
                 #{tech.name}
               </span>
@@ -63,7 +68,7 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div className="flex gap-4">
               <Link
-                to={`/projects/${project.id}`}
+                to={`/projects/${project.slug}`}
                 className="btn-primary"
               >
                 Подробнее

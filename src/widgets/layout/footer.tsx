@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold text-primary-400">АМ</span>
-              <span className="ml-2 text-lg font-semibold">Dev</span>
+              <span className="text-2xl font-bold text-primary-400">a</span>
+              <span className="text-2xl font-bold">mufazalov</span>
             </div>
             <p className="text-gray-300 text-sm">
               Fullstack разработчик специализирующийся на создании современных веб-приложений

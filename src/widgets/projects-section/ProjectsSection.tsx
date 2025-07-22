@@ -10,7 +10,9 @@ export const ProjectsSection: React.FC = () => {
     <section className="py-20 bg-gray-50" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-title">Последние проекты</h2>
+          <Link to="/projects" className="inline-block cursor-pointer hover:text-primary-600 transition-colors">
+            <h2 className="section-title">Последние проекты</h2>
+          </Link>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Посмотрите на некоторые из моих последних работ
           </p>

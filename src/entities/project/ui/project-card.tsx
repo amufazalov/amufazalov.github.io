@@ -30,14 +30,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       
       <div className="p-6">
-        <div className="flex justify-between items-start mb-3">
+        <span className="inline-block mb-2 text-xs font-medium px-3 py-1.5 bg-primary-50 text-primary-700 rounded-full">
+          {project.type}
+        </span>
+
+        <Link 
+          to={`/projects/${project.slug}`}
+          className="block mb-3 cursor-pointer"
+        >
           <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
             {project.title}
           </h3>
-          <span className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-600 rounded-full">
-            {project.type}
-          </span>
-        </div>
+        </Link>
         
         <p className="text-gray-600 text-sm mb-4 line-clamp-3">
           {project.shortDescription}
@@ -53,7 +57,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           ))}
           {project.technologies.length > 3 && (
-            <span className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-600">
+            <span className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-800">
               +{project.technologies.length - 3}
             </span>
           )}
@@ -61,7 +65,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         
         <div className="flex justify-between items-center">
           <Link
-            to={`/projects/${project.id}`}
+            to={`/projects/${project.slug}`}
             className="inline-flex items-center text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
           >
             Подробнее

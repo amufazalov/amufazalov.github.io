@@ -5,8 +5,8 @@ import { Technology } from '../../shared/types';
 import { ContactSection } from '../../widgets/contact-section';
 
 export const ProjectDetailPage: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const project = projects.find((p) => p.id === id);
+  const { slug } = useParams<{ slug: string }>();
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -14,7 +14,7 @@ export const ProjectDetailPage: React.FC = () => {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Проект не найден</h1>
           <p className="text-xl text-gray-600 mb-8">
-            К сожалению, проект с указанным ID не существует.
+            К сожалению, проект с указанным URL не существует.
           </p>
           <Link to="/projects" className="btn-primary">
             Вернуться к проектам

@@ -9,7 +9,7 @@ import { CompaniesSection } from '../../widgets/companies-section';
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden"> 
       <HeroSection />
       <SkillsSection />
       <CertificatesSection />
