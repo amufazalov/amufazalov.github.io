@@ -22,7 +22,7 @@ export const CompaniesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
           {companies.map((company) => (
             <div key={company.name} className="flex justify-center">
               <a
@@ -31,6 +31,7 @@ export const CompaniesSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="block p-4 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-200 group"
                 title={company.name}
+                aria-label={company.name}
               >
                 <img
                   src={company.logo}
@@ -49,29 +50,6 @@ export const CompaniesSection: React.FC = () => {
               </a>
             </div>
           ))}
-          
-          {/* Additional placeholder companies for demo */}
-          <div className="flex justify-center">
-            <div className="p-4 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-200 group">
-              <div className="h-12 flex items-center justify-center text-gray-400 font-medium text-sm bg-gray-200 rounded px-4">
-                Company A
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="p-4 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-200 group">
-              <div className="h-12 flex items-center justify-center text-gray-400 font-medium text-sm bg-gray-200 rounded px-4">
-                Company B
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="p-4 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-200 group">
-              <div className="h-12 flex items-center justify-center text-gray-400 font-medium text-sm bg-gray-200 rounded px-4">
-                Company C
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
