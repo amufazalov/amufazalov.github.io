@@ -415,7 +415,7 @@ export const projects: Project[] = [
   {
     id: '15',
     slug: 'magento-2-associated-products-stock-update',
-    title: 'Associated Products Stock Update',
+    title: 'Magento 2 Associated Products Stock Update',
     description: 'Модуль для Magento 2, который автоматизирует управление остатками связанных товаров. Синхронизирует количество на складе между основным и ассоциированными товарами, поддерживает гибкую настройку ассоциаций, импорт/экспорт CSV, логирование и расширяемость.',
     shortDescription: 'Автоматизация остатков связанных товаров в Magento 2',
     type: 'Magento 2 Module',
@@ -463,6 +463,74 @@ export const projects: Project[] = [
       'Совместимость с мультистор-структурой',
       'Расширяемость через интерфейсы',
       'Улучшение SEO для мультиязычных сайтов'
+    ]
+  },
+  {
+    id: '17',
+    slug: 'landing-systema-a',
+    title: 'Systema-a.com – лендинг и модуль QR для админки',
+    description: 'Разработка лендинга на MODX и написание модуля для админки, который генерирует QR-код с уникальной ссылкой для получения документации с сайта. Реализована возможность загрузки документации через админку. Использованы PHP, JavaScript, HTML, CSS, ExtJS 3.0.',
+    shortDescription: 'Лендинг на MODX и QR-модуль для админки',
+    type: 'Landing',
+    technologies: [
+      { name: 'MODX', category: 'backend' },
+      { name: 'PHP', category: 'backend' },
+      { name: 'JavaScript', category: 'frontend' },
+      { name: 'HTML', category: 'frontend' },
+      { name: 'CSS', category: 'frontend' },
+      { name: 'ExtJS 3.0', category: 'frontend' }
+    ],
+    company: { name: 'Freelance', logo: '/images/companies/freelance-logo.png', url: 'https://amufazalov.ru' },
+    image: '/images/projects/systema-a.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/systema-a.com/screenshot_764x430_1.webp',
+      '/images/projects/systema-a.com/screenshot_764x430_2.webp',
+      '/images/projects/systema-a.com/screenshot_764x430_3.webp',
+    ],
+    siteUrl: 'https://systema-a.com/',
+    period: { start: '2020', end: '2020' },
+    features: [
+      'Лендинг на MODX',
+      'Модуль для админки с генерацией QR-кода',
+      'Генерация уникальных ссылок для документации',
+      'Загрузка документации через админку',
+      'ExtJS 3.0 для интерфейса админки'
+    ]
+  },
+  {
+    id: '18',
+    slug: 'p-metr',
+    title: 'P-metr.ru – парсер продуктов со старого сайта и перенос каталога',
+    description: 'Клиент потерял доступы к сайту и серверу. А доступы предыдущий разработчик предоставит только за высокую дополнительную оплату. Был написан парсер на Python, который собрал все продукты, после чего был создан новый сайт на платформе ReadyScript. Использованы PHP, JavaScript, CSS, HTML5 для нового сайта.',
+    shortDescription: 'Парсер и перенос каталога на ReadyScript',
+    type: 'E-commerce',
+    technologies: [
+      { name: 'Python', category: 'backend' },
+      { name: 'ReadyScript', category: 'backend' },
+      { name: 'PHP', category: 'backend' },
+      { name: 'JavaScript', category: 'frontend' },
+      { name: 'CSS', category: 'frontend' },
+      { name: 'HTML5', category: 'frontend' }
+    ],
+    company: { name: 'Freelance', logo: '/images/companies/freelance-logo.png', url: 'https://amufazalov.ru' },
+    image: '/images/projects/p-metr.ru/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/p-metr.ru/screenshot_764x430_1.webp',
+      '/images/projects/p-metr.ru/screenshot_764x430_2.webp',
+      '/images/projects/p-metr.ru/screenshot_764x430_3.webp',
+      '/images/projects/p-metr.ru/screenshot_764x430_4.webp',
+      '/images/projects/p-metr.ru/screenshot_764x430_5.webp',
+      '/images/projects/p-metr.ru/screenshot_764x430_6.webp',
+    ],
+    siteUrl: 'https://p-metr.ru/',
+    period: { start: '2021', end: '2021' },
+    features: [
+      'Парсер каталога на Python',
+      'Полный перенос каталога на ReadyScript',
+      'Разработка нового сайта',
+      'Полноценный перенос вёрстки',
+      'Создание новой темы для платформы ReadyScript',
+      'Написание модуля калькулятора для расчёта стоимости работ'
     ]
   }
 ];

@@ -73,7 +73,7 @@ export const ProjectDetailPage: React.FC = () => {
                     href={project.siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary"
+                    className="btn-primary whitespace-nowrap"
                     title="Посетить сайт"
                     aria-label="Посетить сайт"
                   >
