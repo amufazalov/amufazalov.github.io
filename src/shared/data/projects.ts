@@ -15,12 +15,9 @@ export const projects: Project[] = [
       { name: 'jQuery', category: 'frontend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: '/images/projects/ajax-login-wishlist-main.jpg',
-    images: [
-      '/images/projects/ajax-login-wishlist-1.jpg',
-      '/images/projects/ajax-login-wishlist-2.jpg',
-      '/images/projects/ajax-login-wishlist-3.jpg'
-    ],
+    company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
+    image: '',
+    images: [],
     period: { start: 'Март 2023', end: 'Апрель 2023' },
     features: [
       'AJAX авторизация через модальное окно',
@@ -44,11 +41,13 @@ export const projects: Project[] = [
       { name: 'JavaScript', category: 'frontend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: '/images/projects/funkylenses-main.jpg',
+    company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
+    image: '/images/projects/funkylenses.com/screenshot_764x430_1.webp',
     images: [
-      '/images/projects/funkylenses-1.jpg',
-      '/images/projects/funkylenses-2.jpg',
-      '/images/projects/funkylenses-3.jpg'
+      '/images/projects/funkylenses.com/screenshot_764x430_1.webp',
+      '/images/projects/funkylenses.com/screenshot_764x430_2.webp',
+      '/images/projects/funkylenses.com/screenshot_764x430_4.webp',
+      '/images/projects/funkylenses.com/screenshot_764x430_5.webp'
     ],
     siteUrl: 'https://funkylenses.com',
     period: { start: 'Январь 2023', end: 'Май 2023' },
@@ -73,9 +72,17 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'JavaScript', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
-    siteUrl: 'null',
+    company: { name: 'Tomat', logo: '/images/companies/tomat-logo.png', url: 'https://tomat.agency' },
+    image: '/images/projects/kraski.ru/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/kraski.ru/screenshot_764x430_1.webp',
+      '/images/projects/kraski.ru/screenshot_764x430_2.webp',
+      '/images/projects/kraski.ru/screenshot_764x430_3.webp',
+      '/images/projects/kraski.ru/screenshot_764x430_4.webp',
+      '/images/projects/kraski.ru/screenshot_764x430_5.webp',
+      '/images/projects/kraski.ru/screenshot_764x430_6.webp'
+    ],
+    siteUrl: 'https://kraski.ru/',
     period: { start: '2017', end: '2018' },
     features: [
       'Поддержка сайта на MODX',
@@ -96,8 +103,16 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'JavaScript', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Tomat', logo: '/images/companies/tomat-logo.png', url: 'https://tomat.agency' },
+    image: '/images/projects/reklab.ru/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/reklab.ru/screenshot_764x430_1.webp',
+      '/images/projects/reklab.ru/screenshot_764x430_2.webp',
+      '/images/projects/reklab.ru/screenshot_764x430_3.webp',
+      '/images/projects/reklab.ru/screenshot_764x430_4.webp',
+      '/images/projects/reklab.ru/screenshot_764x430_5.webp',
+      '/images/projects/reklab.ru/screenshot_764x430_6.webp'
+    ],
     siteUrl: 'https://reklab.ru/',
     period: { start: '2018', end: '2019' },
     features: [
@@ -120,8 +135,16 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'JavaScript', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Tomat', logo: '/images/companies/tomat-logo.png', url: 'https://tomat.agency' },
+    image: '/images/projects/gippokrat.kz/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/gippokrat.kz/screenshot_764x430_1.webp',
+      '/images/projects/gippokrat.kz/screenshot_764x430_2.webp',
+      '/images/projects/gippokrat.kz/screenshot_764x430_3.webp',
+      '/images/projects/gippokrat.kz/screenshot_764x430_4.webp',
+      '/images/projects/gippokrat.kz/screenshot_764x430_5.webp',
+      '/images/projects/gippokrat.kz/screenshot_764x430_6.webp'
+    ],
     siteUrl: 'https://gippokrat.kz/',
     period: { start: '2019', end: '2020' },
     features: [
@@ -143,8 +166,13 @@ export const projects: Project[] = [
       { name: 'Magento 2', category: 'backend' },
       { name: 'PHP', category: 'backend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/pinecraft.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/pinecraft.com/screenshot_764x430_1.webp',
+      '/images/projects/pinecraft.com/screenshot_764x430_2.webp',
+      '/images/projects/pinecraft.com/screenshot_764x430_3.webp'
+    ],
     siteUrl: 'https://www.pinecraft.com/',
     period: { start: '2021', end: '2022' },
     features: [
@@ -165,8 +193,15 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/eu.grainfather.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/eu.grainfather.com/screenshot_764x430_1.webp',
+      '/images/projects/eu.grainfather.com/screenshot_764x430_2.webp',
+      '/images/projects/eu.grainfather.com/screenshot_764x430_3.webp',
+      '/images/projects/eu.grainfather.com/screenshot_764x430_4.webp',
+      '/images/projects/eu.grainfather.com/screenshot_764x430_5.webp'
+    ],
     siteUrl: 'https://grainfather.com/',
     period: { start: '2021', end: '2022' },
     features: [
@@ -192,7 +227,8 @@ export const projects: Project[] = [
       { name: 'C#', category: 'backend' },
       { name: 'Unity', category: 'frontend' }
     ],
-    image: 'null',
+    company: { name: 'Mageinn', logo: '/images/companies/mageinn-logo.webp', url: 'https://mageinn.com' },
+    image: '',
     images: [],
     siteUrl: 'null',
     period: { start: 'Май 2022', end: 'Ноябрь 2023' },
@@ -216,8 +252,12 @@ export const projects: Project[] = [
       { name: 'Magento 2', category: 'backend' },
       { name: 'PHP', category: 'backend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/crazylenses.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/crazylenses.com/screenshot_764x430_1.webp',
+      '/images/projects/crazylenses.com/screenshot_764x430_2.webp'
+    ],
     siteUrl: 'https://www.crazylenses.com/',
     period: { start: 'Февраль 2021', end: 'Апрель 2021' },
     features: [
@@ -236,8 +276,14 @@ export const projects: Project[] = [
       { name: 'Magento 2', category: 'backend' },
       { name: 'PHP', category: 'backend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Scommerce Mage', logo: '/images/companies/scommerce-logo.jpg', url: 'https://www.scommerce-mage.com/' },
+    image: '/images/projects/snaintongolf.co.uk/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/snaintongolf.co.uk/screenshot_764x430_1.webp',
+      '/images/projects/snaintongolf.co.uk/screenshot_764x430_2.webp',
+      '/images/projects/snaintongolf.co.uk/screenshot_764x430_3.webp',
+      '/images/projects/snaintongolf.co.uk/screenshot_764x430_4.webp'
+    ],
     siteUrl: 'https://www.snaintongolf.co.uk/',
     period: { start: 'Февраль 2021', end: 'Апрель 2021' },
     features: [
@@ -257,8 +303,14 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/us.sabon.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/us.sabon.com/screenshot_764x430_1.webp',
+      '/images/projects/us.sabon.com/screenshot_764x430_2.webp',
+      '/images/projects/us.sabon.com/screenshot_764x430_3.webp',
+      '/images/projects/us.sabon.com/screenshot_764x430_4.webp'
+    ],
     siteUrl: 'https://us.sabon.com/',
     period: { start: '2021', end: '2022' },
     features: [
@@ -279,8 +331,14 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/vitajuwel.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/vitajuwel.com/screenshot_764x430_1.webp',
+      '/images/projects/vitajuwel.com/screenshot_764x430_2.webp',
+      '/images/projects/vitajuwel.com/screenshot_764x430_3.webp',
+      '/images/projects/vitajuwel.com/screenshot_764x430_4.webp'
+    ],
     siteUrl: 'https://www.vitajuwel.us/',
     period: { start: '2021', end: '2022' },
     features: [
@@ -301,8 +359,13 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/tassenfuzzi.de/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/tassenfuzzi.de/screenshot_764x430_1.webp',
+      '/images/projects/tassenfuzzi.de/screenshot_764x430_2.webp',
+      '/images/projects/tassenfuzzi.de/screenshot_764x430_3.webp'
+    ],
     siteUrl: 'https://www.tassenfuzzi.de/',
     period: { start: '2021', end: '2022' },
     features: [
@@ -323,8 +386,16 @@ export const projects: Project[] = [
       { name: 'PHP', category: 'backend' },
       { name: 'LESS', category: 'frontend' }
     ],
-    image: 'null',
-    images: [],
+    company: { name: 'Magebit', logo: '/images/companies/magebit-logo.svg', url: 'https://magebit.com' },
+    image: '/images/projects/bakerdays.com/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/bakerdays.com/screenshot_764x430_1.webp',
+      '/images/projects/bakerdays.com/screenshot_764x430_2.webp',
+      '/images/projects/bakerdays.com/screenshot_764x430_3.webp',
+      '/images/projects/bakerdays.com/screenshot_764x430_4.webp',
+      '/images/projects/bakerdays.com/screenshot_764x430_5.webp',
+      '/images/projects/bakerdays.com/screenshot_764x430_6.webp'
+    ],
     siteUrl: 'https://www.bakerdays.com/',
     period: { start: '2021', end: '2022' },
     features: [

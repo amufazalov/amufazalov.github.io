@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../../shared/data';
 import { Technology } from '../../shared/types';
-import { ContactSection } from '../../widgets/contact-section';
+import { ContactSection } from '../../widgets/contact-section'; 
 
 export const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -74,23 +74,10 @@ export const ProjectDetailPage: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"
+                    title="Посетить сайт"
+                    aria-label="Посетить сайт"
                   >
                     Посетить сайт
-                  </a>
-                )}
-                {project.company && (
-                  <a
-                    href={project.company.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-secondary flex items-center"
-                  >
-                    <img
-                      src={project.company.logo}
-                      alt={project.company.name}
-                      className="w-5 h-5 mr-2"
-                    />
-                    {project.company.name}
                   </a>
                 )}
               </div>
@@ -170,12 +157,14 @@ export const ProjectDetailPage: React.FC = () => {
                     <div>
                       <dt className="text-sm font-medium text-gray-500">Компания</dt>
                       <dd className="text-sm text-gray-900 flex items-center">
-                        <img
-                          src={project.company.logo}
-                          alt={project.company.name}
-                          className="w-4 h-4 mr-2"
-                        />
-                        {project.company.name}
+                        <a href={project.company.url} target="_blank" rel="noopener noreferrer">
+                          <img
+                            src={project.company.logo}
+                            alt={project.company.name}
+                            className="h-[40px] object-contain mt-2"
+                          />
+                        </a>
+                        
                       </dd>
                     </div>
                   )}

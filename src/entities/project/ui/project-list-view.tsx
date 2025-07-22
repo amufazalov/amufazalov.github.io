@@ -80,6 +80,8 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary"
+                  title="Посетить сайт"
+                  aria-label="Посетить сайт"
                 >
                   Посетить сайт
                 </a>
@@ -88,16 +90,7 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
             
             {project.company && (
               <div className="flex items-center text-sm text-gray-500">
-                <img
-                  src={project.company.logo}
-                  alt={project.company.name}
-                  className="w-6 h-6 mr-2 rounded object-contain"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
-                <span>{project.company.name}</span>
+                <img src={project.company.logo} alt={project.company.name} className="h-[30px] object-contain" />
               </div>
             )}
           </div>
