@@ -1,6 +1,6 @@
 export interface Technology {
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'other';
+  category: 'frontend' | 'backend' | 'database' | 'other' | 'ai' | 'mobile' | 'devops';
 }
 
 export interface Project {
@@ -29,7 +29,7 @@ export interface Project {
 export interface Skill {
   name: string;
   level: number; // 0-100
-  category: 'frontend' | 'backend' | 'database' | 'other';
+  category: 'frontend' | 'backend' | 'database' | 'other' | 'ai';
   icon?: string;
 }
 
