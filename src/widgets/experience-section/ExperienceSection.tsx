@@ -2,9 +2,30 @@ import React from 'react';
 import { experiences, personalInfo } from '../../shared/data';
 
 export const ExperienceSection: React.FC = () => {
+  const russianMonths: { [key: string]: number } = {
+    'январь': 0, 'февраль': 1, 'март': 2, 'апрель': 3, 'май': 4, 'июнь': 5,
+    'июль': 6, 'август': 7, 'сентябрь': 8, 'октябрь': 9, 'ноябрь': 10, 'декабрь': 11
+  };
+
+  const parseRussianDate = (dateString: string): Date => {
+    const parts = dateString.toLowerCase().split(' ');
+    if (parts.length !== 2) {
+      return new Date();
+    }
+    
+    const month = russianMonths[parts[0]];
+    const year = parseInt(parts[1]);
+    
+    if (month === undefined || isNaN(year)) {
+      return new Date();
+    }
+    
+    return new Date(year, month);
+  };
+
   const formatPeriod = (start: string, end: string | null) => {
-    const startDate = new Date(start);
-    const endDate = end ? new Date(end) : new Date();
+    const startDate = parseRussianDate(start);
+    const endDate = end ? parseRussianDate(end) : new Date();
     
     const months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + 
                   (endDate.getMonth() - startDate.getMonth());
@@ -22,6 +43,14 @@ export const ExperienceSection: React.FC = () => {
     }
     
     return duration;
+  };
+
+  const formatDisplayDate = (dateString: string): string => {
+    const date = parseRussianDate(dateString);
+    return date.toLocaleDateString('ru-RU', { 
+      month: 'long', 
+      year: 'numeric' 
+    });
   };
 
   return (
@@ -56,32 +85,28 @@ export const ExperienceSection: React.FC = () => {
                       </p>
                     </div>
                     {experience.logo && (
-                      <img
-                        src={experience.logo}
-                        alt={experience.company}
-                        className="w-12 h-12 rounded-lg object-contain"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                        }}
-                      />
+                      <a href={experience.url} target="_blank" rel="noopener noreferrer" title={experience.company} aria-label={experience.company}>
+                        <img
+                          src={experience.logo}
+                          alt={experience.company}
+                          className="rounded-lg object-contain w-[140px]"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                          }}
+                        />
+                      </a>
                     )}
                   </div>
                   
                   <div className="text-sm text-gray-500 mb-3">
                     <span className="font-medium">
-                      {new Date(experience.period.start).toLocaleDateString('ru-RU', { 
-                        month: 'long', 
-                        year: 'numeric' 
-                      })}
+                      {formatDisplayDate(experience.period.start)}
                     </span>
                     {' - '}
                     <span className="font-medium">
                       {experience.period.end 
-                        ? new Date(experience.period.end).toLocaleDateString('ru-RU', { 
-                            month: 'long', 
-                            year: 'numeric' 
-                          })
+                        ? formatDisplayDate(experience.period.end)
                         : 'настоящее время'
                       }
                     </span>
@@ -90,9 +115,10 @@ export const ExperienceSection: React.FC = () => {
                     </span>
                   </div>
                   
-                  <p className="text-gray-700 mb-4">
-                    {experience.description}
-                  </p>
+                  <p 
+                    className="text-gray-700 mb-4"
+                    dangerouslySetInnerHTML={{ __html: experience.description }}
+                  />
                   
                   <div className="flex flex-wrap gap-2">
                     {experience.technologies.map((tech: string) => (
