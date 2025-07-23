@@ -30,7 +30,7 @@ export const ExperienceSection: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">Опыт работы</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {personalInfo.yearsOfExperience}+ лет в разработке современных веб-решений
+            10 лет в разработке современных веб-решений
           </p>
         </div>
 
