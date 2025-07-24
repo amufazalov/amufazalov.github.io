@@ -9,7 +9,6 @@
 - **Email:** [airat.mufazalov@yandex.ru](mailto:airat.mufazalov@yandex.ru)
 - **Telegram:** [@kunrag](https://t.me/kunrag)
 - **VK:** [vk.com/kunrag](https://vk.com/kunrag)
-- **WhatsApp:** [+7-927-464-19-37](https://wa.me/79274641937)
 
 ---
 
