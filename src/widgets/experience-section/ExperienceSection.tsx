@@ -94,71 +94,84 @@ export const ExperienceSection: React.FC = () => {
         </div>
 
         <div className="relative w-full">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gray-200"></div>
+          {/* Timeline line - адаптивное позиционирование */}
+          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-gray-200"></div>
           
           {experiences.map((experience, index) => (
-            <div key={experience.id} className="relative flex items-center mb-12">
-              {/* Timeline dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+            <div key={experience.id} className="relative mb-8 md:mb-12">
+              {/* Timeline dot - адаптивное позиционирование */}
+              <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 top-6 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg z-10"></div>
               
-              {/* Content */}
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'ml-auto pl-12'}`}>
-                <div className="card p-6">
-                  <div className="flex items-center mb-3 justify-between">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">
-                        {experience.position}
-                      </h3>
-                      <p className="text-primary-600 font-semibold">
-                        {experience.company}
-                      </p>
+              {/* Content wrapper - адаптивная структура */}
+              <div className="md:flex md:items-center">
+                {/* Мобильная версия: все карточки справа от линии */}
+                <div className={`
+                  ml-16 md:ml-0
+                  md:w-1/2 
+                  ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:ml-auto md:pl-12'}
+                `}>
+                  <div className="card p-4 md:p-6">
+                    {/* Header с адаптивным расположением логотипа */}
+                    <div className="flex flex-col space-y-3 md:flex-row md:items-center md:justify-between md:space-y-0 mb-3">
+                      <div className={`${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+                        <h3 className="text-lg md:text-xl font-bold text-gray-900">
+                          {experience.position}
+                        </h3>
+                        <p className="text-primary-600 font-semibold">
+                          {experience.company}
+                        </p>
+                      </div>
+                      {experience.logo && (
+                        <div className={`flex-shrink-0 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+                          <a href={experience.url} target="_blank" rel="noopener noreferrer" title={experience.company} aria-label={experience.company}>
+                            <img
+                              src={experience.logo}
+                              alt={experience.company}
+                              className="rounded-lg object-contain w-24 md:w-[140px] h-auto"
+                              onError={(e) => {
+                                const target = e.target as HTMLImageElement;
+                                target.style.display = 'none';
+                              }}
+                            />
+                          </a>
+                        </div>
+                      )}
                     </div>
-                    {experience.logo && (
-                      <a href={experience.url} target="_blank" rel="noopener noreferrer" title={experience.company} aria-label={experience.company}>
-                        <img
-                          src={experience.logo}
-                          alt={experience.company}
-                          className="rounded-lg object-contain w-[140px]"
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.style.display = 'none';
-                          }}
-                        />
-                      </a>
-                    )}
-                  </div>
-                  
-                  <div className="text-sm text-gray-500 mb-3">
-                    <span className="font-medium">
-                      {formatDisplayDate(experience.period.start)}
-                    </span>
-                    {' - '}
-                    <span className="font-medium">
-                      {experience.period.end 
-                        ? formatDisplayDate(experience.period.end)
-                        : 'настоящее время'
-                      }
-                    </span>
-                    <span className="block text-gray-400">
-                      {formatPeriod(experience.period.start, experience.period.end)}
-                    </span>
-                  </div>
-                  
-                  <p 
-                    className="text-gray-700 mb-4"
-                    dangerouslySetInnerHTML={{ __html: experience.description }}
-                  />
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {experience.technologies.map((tech: string) => (
-                      <span
-                        key={tech}
-                        className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-800"
-                      >
-                        {tech}
+                    
+                    {/* Период работы */}
+                    <div className="text-sm text-gray-500 mb-3">
+                      <span className="font-medium">
+                        {formatDisplayDate(experience.period.start)}
                       </span>
-                    ))}
+                      {' - '}
+                      <span className="font-medium">
+                        {experience.period.end 
+                          ? formatDisplayDate(experience.period.end)
+                          : 'настоящее время'
+                        }
+                      </span>
+                      <span className="block text-gray-400 mt-1">
+                        {formatPeriod(experience.period.start, experience.period.end)}
+                      </span>
+                    </div>
+                    
+                    {/* Описание */}
+                    <p 
+                      className="text-gray-700 mb-4 text-sm md:text-base"
+                      dangerouslySetInnerHTML={{ __html: experience.description }}
+                    />
+                    
+                    {/* Технологии */}
+                    <div className="flex flex-wrap gap-2">
+                      {experience.technologies.map((tech: string) => (
+                        <span
+                          key={tech}
+                          className="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-800"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
