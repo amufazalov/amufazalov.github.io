@@ -1,10 +1,9 @@
 # 👨‍💻 Айрат Муфазалов - Fullstack Разработчик
 
-![Developer Profile](../public/images/hero/me-white_square.png)
-
+![Developer Profile](https://raw.githubusercontent.com/amufazalov/amufazalov.github.io/refs/heads/main/public/images/hero/me-white_square_240.png)
 ## 🚀 О себе
 
-Опытный fullstack разработчик с **10+ годами опыта** создания современных веб-приложений. Специализируюсь на React, TypeScript, PHP, Laravel и создании масштабируемых решений.
+Опытный fullstack разработчик с **7+ годами опыта** создания современных веб-приложений. Специализируюсь на React, TypeScript, NestJS, Magento 2, PHP, Laravel и создании масштабируемых решений.
 
 ### 📫 Контакты
 - **Email:** [airat.mufazalov@yandex.ru](mailto:airat.mufazalov@yandex.ru)
