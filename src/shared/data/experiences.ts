@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
     url: 'https://tomat.agency'
   },
   {
-    id: '3',
+    id: '2',
     company: 'Magebit',
     position: 'Magento 2 Developer',
     period: { start: 'май 2021', end: 'май 2022' },
@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     url: 'https://magebit.com'
   },
   {
-    id: '2',
+    id: '3',
     company: 'Scommerce Mage',
     position: 'Magento 2 Developer',
     period: { start: 'март 2020', end: 'март 2021' },
@@ -34,7 +34,7 @@ export const experiences: Experience[] = [
   {
     id: '4',
     company: 'Mageinn',
-    position: 'Magento 2 Developer, Старший разработчик',
+    position: 'Старший разработчик',
     period: { start: 'февраль 2019', end: 'ноябрь 2023' },
     description: 'Работа над проектами компании Mageinn. <strong>Поддержка сайтов на Magento 2</strong>. C июня 2022 до ноября 2023 работа над проектом <strong>Starsdeluxe.net - слоты и игровое лобби</strong>. Также уже выступал в роли <strong>Тимлида</strong> и <strong>обучал новых разработчиков</strong> в рамках проекта starsdeluxe.net',
     technologies: ['NodeJS', 'Laravel 7','React', 'PHP', 'TypeScript', 'WebSockets', 'SOAP', 'C++', 'C#', 'Unity'],

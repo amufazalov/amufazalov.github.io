@@ -51,26 +51,16 @@ export const CertificatesSection: React.FC = () => {
                 {/* Правая часть - Информация о сертификате */}
                 <div className="p-8">
                   {/* Header with issuer logo */}
-                  <div className="flex items-center mb-6">
+                  <div className="flex flex-wrap items-center mb-6">
                     <img
                       src={certificate.issuerLogo}
                       alt={certificate.issuer}
-                      className="w-16 h-16 object-contain mr-4"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        target.parentElement!.innerHTML = `
-                          <div class="w-16 h-16 bg-orange-100 flex items-center justify-center mr-4">
-                            <span class="text-orange-600 font-bold text-xl">${certificate.issuer[0]}</span>
-                          </div>
-                        `;
-                      }}
+                      className="w-16 h-16 object-contain"
                     />
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-1">
                         {certificate.title}
                       </h3>
-                      <p className="text-orange-600 font-semibold">{certificate.issuer}</p>
                     </div>
                   </div>
 
