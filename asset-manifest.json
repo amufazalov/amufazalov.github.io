@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/amufazalov/static/css/main.b0263d11.css",
+    "main.js": "/amufazalov/static/js/main.551eaabb.js",
+    "index.html": "/amufazalov/index.html",
+    "main.b0263d11.css.map": "/amufazalov/static/css/main.b0263d11.css.map",
+    "main.551eaabb.js.map": "/amufazalov/static/js/main.551eaabb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0263d11.css",
+    "static/js/main.551eaabb.js"
+  ]
+}
