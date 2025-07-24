@@ -1,5 +1,5 @@
 import React from 'react';
-import { experiences, personalInfo } from '../../shared/data';
+import { experiences } from '../../shared/data';
 
 export const ExperienceSection: React.FC = () => {
   const russianMonths: { [key: string]: number } = {
@@ -21,6 +21,36 @@ export const ExperienceSection: React.FC = () => {
     }
     
     return new Date(year, month);
+  };
+
+  const calculateTotalExperience = (): string => {
+    // Находим самую раннюю дату начала работы
+    const earliestStart = experiences.reduce((earliest, experience) => {
+      const currentStart = parseRussianDate(experience.period.start);
+      const earliestStart = parseRussianDate(earliest);
+      return currentStart < earliestStart ? experience.period.start : earliest;
+    }, experiences[0]?.period.start || '');
+
+    // Рассчитываем опыт от самой ранней даты до текущего момента
+    const startDate = parseRussianDate(earliestStart);
+    const endDate = new Date();
+    
+    const months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + 
+                  (endDate.getMonth() - startDate.getMonth());
+    
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    
+    let duration = '';
+    if (years > 0) {
+      duration += `${years} ${years === 1 ? 'год' : years < 5 ? 'года' : 'лет'}`;
+    }
+    if (remainingMonths > 0) {
+      if (duration) duration += ' ';
+      duration += `${remainingMonths} ${remainingMonths === 1 ? 'месяц' : remainingMonths < 5 ? 'месяца' : 'месяцев'}`;
+    }
+    
+    return duration;
   };
 
   const formatPeriod = (start: string, end: string | null) => {
@@ -59,7 +89,7 @@ export const ExperienceSection: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="section-title">Опыт работы</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            10 лет в разработке современных веб-решений
+            {calculateTotalExperience()} в разработке современных веб-решений
           </p>
         </div>
 

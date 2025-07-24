@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 max-w-lg">
-              Привет! Я {personalInfo.name.split(' ')[0]}, fullstack разработчик из Москвы. 
+              Привет! Я {personalInfo.name.split(' ')[0]}, fullstack разработчик из Набережных Челнов. 
               Создаю современные веб-приложения для растущих компаний.
             </p>
             
