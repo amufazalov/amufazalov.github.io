@@ -2,7 +2,7 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
-    id: '21',
+    id: '22',
     slug: 'pick6-betting-tma',
     title: 'Pick 6 Horse Racing – MVP тотализаторной платформы для конных скачек',
     description: 'Разработка MVP современной тотализаторной платформы для организации и управления конными скачками. В основе технологического стека – TypeScript, NestJS и React. Реализованы: интеграция с Telegram WebApp, система онлайн-платежей через TON криптовалюту и Telegram Stars, комплексное управление пользователями и заказами. Архитектура построена на микросервисах с использованием Kafka для обработки событий, Prisma ORM для взаимодействия с базой данных и Storybook для документирования UI-компонентов.',
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '20',
+    id: '21',
     slug: 'commboost',
     title: 'CommBoost — AI-платформа для анализа звонков в продажах',
     description: 'Разработка и масштабирование AI-бэкенда на NestJS и TypeScript. Интеграция OpenAI API для классификации звонков и генерации чек-листов. Реализована модульная многоклиентская архитектура с RabbitMQ, Redis и PostgreSQL. Обеспечена безопасность и масштабируемость решения.',
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: '19',
+    id: '20',
     slug: 'fantasy-horse-racing',
     title: 'Fantasy Horse Racing — мобильное фэнтези-приложение для рынка Великобритании',
     description: 'Разработка и сопровождение мобильного фэнтези-приложения с использованием React и NestJS. Работа с PostgreSQL и RabbitMQ. Участие в Agile-процессах и управление контейнерами через Portainer.',
@@ -130,6 +130,56 @@ export const projects: Project[] = [
       'Поддержка PostgreSQL',
       'DevOps-управление через Portainer',
       'Участие в Scrum-процессах'
+    ]
+  },
+  {
+    id: '19',
+    slug: 'slot-games-platform',
+    title: 'Игровая платформа и адаптер для слот-игр – Реверс-инжиниринг и универсальная интеграция',
+    description: 'Разработка комплексной игровой платформы с универсальным адаптером для интеграции слот-игр различных провайдеров (Wazdan, Pragmatic Play, Greentube, Hacksaw Gaming, RubyPlay). Проект включал реверс-инжиниринг работы игр, создание API для лобби на React, разработку Telegram-бота для управления клубами и терминалами. Реализована система формирования статистики в Excel, блокировки игр/терминалов, интеграция Unity-игр. Архитектура построена на NodeJS с использованием RabbitMQ, WebSockets, REST API и SOAP. Выполнял роль тимлида и техдиректора, координируя работу команды из 3 разработчиков. Платформа поддерживала более 300 игр с автоматической генерацией математики через SlotMachines.',
+    shortDescription: 'Игровая платформа с универсальным адаптером для слот-игр и реверс-инжинирингом',
+    type: 'Gaming Platform',
+    technologies: [
+      { name: 'NodeJS', category: 'backend' },
+      { name: 'TypeScript', category: 'backend' },
+      { name: 'React', category: 'frontend' },
+      { name: 'RabbitMQ', category: 'backend' },
+      { name: 'WebSockets', category: 'backend' },
+      { name: 'REST API', category: 'backend' },
+      { name: 'SOAP', category: 'backend' },
+      { name: 'C#', category: 'backend' },
+      { name: 'Unity', category: 'other' },
+      { name: 'Telegram Bot API', category: 'backend' },
+      { name: 'Excel Integration', category: 'backend' }
+    ],
+    company: { name: 'Mageinn', logo: '/images/companies/mageinn-logo.webp', url: 'https://mageinn.com' },
+    image: '/images/projects/starsdeluxe.net/Picture1.png',
+    images: [
+      '/images/projects/starsdeluxe.net/Picture1.png',
+      '/images/projects/starsdeluxe.net/Picture2.png',
+      '/images/projects/starsdeluxe.net/Picture3.png',
+      '/images/projects/starsdeluxe.net/Picture4.png',
+      '/images/projects/starsdeluxe.net/Picture5.png',
+      '/images/projects/starsdeluxe.net/Picture6.png'
+    ],
+    siteUrl: 'https://starsdeluxe.net/',
+    period: { start: 'май 2022', end: 'ноябрь 2023' },
+    features: [
+      'Реверс-инжиниринг слот-игр от 5+ провайдеров',
+      'Универсальный адаптер для формирования ответов',
+      'API для работы с игровым лобби',
+      'React-лобби с интеграцией игр',
+      'Telegram-бот для управления клубами',
+      'Система линковки терминалов',
+      'Генерация статистики в Excel',
+      'Блокировка игр и терминалов по ошибкам',
+      'Контроль высокого RTP',
+      'Интеграция Unity-игр в лобби',
+      'Написание логики игр для фронтенда',
+      'Модуль коннектора для сторонних сервисов',
+      'Техническая документация для интеграций',
+      'Управление командой из 3 разработчиков',
+      'Поддержка более 300 слот-игр',
     ]
   },
   {
