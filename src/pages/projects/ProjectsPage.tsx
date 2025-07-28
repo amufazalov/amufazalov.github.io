@@ -16,8 +16,7 @@ export const ProjectsPage: React.FC = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Мои Проекты</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Коллекция проектов, которые я разработал за последние годы. 
-              От интернет-магазинов до корпоративных систем.
+              Коллекция проектов, разработанных мною за последние годы — от интернет-магазинов до корпоративных систем.
             </p>
           </div>
 

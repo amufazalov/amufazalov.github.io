@@ -65,9 +65,10 @@ export const CertificatesSection: React.FC = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    {certificate.description}
-                  </p>
+                  <p 
+                      className="text-gray-700 mb-4 text-sm md:text-base"
+                      dangerouslySetInnerHTML={{ __html: certificate.description }}
+                    />
 
                   {/* Certificate Details */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -131,7 +132,7 @@ export const CertificatesSection: React.FC = () => {
         {/* Additional Info */}
         <div className="mt-12 text-center">
           <p className="text-gray-600">
-            Все сертификаты проверены и актуальны. Верификация доступна по официальным ссылкам.
+            Все сертификаты подтверждены и актуальны — верификация доступна через официальные ссылки.
           </p>
         </div>
       </div>
