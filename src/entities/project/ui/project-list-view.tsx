@@ -50,9 +50,7 @@ export const ProjectListView: React.FC<ProjectListViewProps> = ({ project }) => 
             </span>
           </div>
           
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            {project.shortDescription}
-          </p>
+          <p className="text-gray-700 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: project.shortDescription }}></p>
           
           <div className="flex flex-wrap gap-2 mb-6">
             {project.technologies.map((tech, index) => (

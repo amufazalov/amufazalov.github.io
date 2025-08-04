@@ -108,7 +108,7 @@ export const ProjectDetailPage: React.FC = () => {
               {/* Description */}
               <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Описание проекта</h2>
-                <p className="text-gray-700 leading-relaxed">{project.description}</p>
+                <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: project.description }}></p>
               </div>
 
               {/* Features */}

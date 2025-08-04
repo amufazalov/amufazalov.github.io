@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: '22',
     slug: 'pick6-betting-tma',
     title: 'Pick 6 Horse Racing – MVP тотализаторной платформы для конных скачек',
-    description: 'Разработка MVP современной тотализаторной платформы для организации и управления конными скачками. В основе технологического стека – TypeScript, NestJS и React. Реализованы: интеграция с Telegram WebApp, система онлайн-платежей через TON криптовалюту и Telegram Stars, комплексное управление пользователями и заказами. Архитектура построена на микросервисах с использованием Kafka для обработки событий, Prisma ORM для взаимодействия с базой данных и Storybook для документирования UI-компонентов.',
-    shortDescription: 'Инновационная MVP платформа тотализатора для конных скачек с интеграцией Telegram WebApp и поддержкой TON',
+    description: 'Разработка <strong>MVP современной тотализаторной платформы</strong> для организации и управления конными скачками. В основе технологического стека – <strong>TypeScript, NestJS и React</strong>.<br/><br/>Реализованы: интеграция с <strong>Telegram WebApp</strong>, система онлайн-платежей через <strong>TON криптовалюту и Telegram Stars</strong>, комплексное управление пользователями и заказами.<br/><br/>Архитектура построена на <strong>микросервисах</strong> с использованием <strong>Kafka</strong> для обработки событий, <strong>Prisma ORM</strong> для взаимодействия с базой данных и <strong>Storybook</strong> для документирования UI-компонентов.',
+    shortDescription: 'Инновационная <strong>MVP платформа тотализатора</strong> для конных скачек с интеграцией <strong>Telegram WebApp</strong> и поддержкой <strong>TON</strong>',
     type: 'Mobile',
     technologies: [
       { name: 'TypeScript', category: 'backend' },
@@ -51,8 +51,8 @@ export const projects: Project[] = [
     id: '21',
     slug: 'commboost',
     title: 'CommBoost — AI-платформа для анализа звонков в продажах',
-    description: 'Разработка и масштабирование AI-бэкенда на NestJS и TypeScript. Интеграция OpenAI API для классификации звонков и генерации чек-листов. Реализована модульная многоклиентская архитектура с RabbitMQ, Redis и PostgreSQL. Обеспечена безопасность и масштабируемость решения.',
-    shortDescription: 'AI-анализ звонков, интеграция LLM, NestJS, PostgreSQL',
+    description: 'Разработка и масштабирование <strong>AI-бэкенда на NestJS и TypeScript</strong>. Интеграция <strong>OpenAI API</strong> для классификации звонков и генерации чек-листов.<br/><br/>Реализована <strong>модульная многоклиентская архитектура</strong> с <strong>RabbitMQ, Redis и PostgreSQL</strong>. Обеспечена безопасность и масштабируемость решения.',
+    shortDescription: '<strong>AI-анализ звонков</strong>, интеграция <strong>LLM</strong>, <strong>NestJS</strong>, <strong>PostgreSQL</strong>',
     type: 'AI',
     technologies: [
       { name: 'TypeScript', category: 'backend' },
@@ -88,16 +88,15 @@ export const projects: Project[] = [
       'Интеграция OpenAI API',
       'Многоклиентская архитектура',
       'Асинхронные потоки с RabbitMQ',
-      'Интеграции с Bitrix24 и AmoCRM',
-      'Обратная связь для LLM-модели'
+      'Интеграции с Bitrix24 и AmoCRM'
     ]
   },
   {
     id: '20',
     slug: 'fantasy-horse-racing',
     title: 'Fantasy Horse Racing — мобильное фэнтези-приложение для рынка Великобритании',
-    description: 'Разработка и сопровождение мобильного фэнтези-приложения с использованием React и NestJS. Работа с PostgreSQL и RabbitMQ. Участие в Agile-процессах и управление контейнерами через Portainer.',
-    shortDescription: 'Фэнтези-спортивное приложение на ReactNative + NestJS',
+    description: 'Разработка и сопровождение <strong>мобильного фэнтези-приложения</strong> с использованием <strong>React и NestJS</strong>. Работа с <strong>PostgreSQL и RabbitMQ</strong>.<br/><br/>Участие в <strong>Agile-процессах</strong> и управление контейнерами через <strong>Portainer</strong>.',
+    shortDescription: '<strong>Фэнтези-спортивное приложение</strong> на <strong>ReactNative + NestJS</strong>',
     type: 'Mobile',
     technologies: [
       { name: 'ReactNative', category: 'frontend' },
@@ -135,9 +134,9 @@ export const projects: Project[] = [
   {
     id: '19',
     slug: 'slot-games-platform',
-    title: 'Игровая платформа и адаптер для слот-игр – Реверс-инжиниринг и универсальная интеграция',
-    description: 'Разработка комплексной игровой платформы с универсальным адаптером для интеграции слот-игр различных провайдеров (Wazdan, Pragmatic Play, Greentube, Hacksaw Gaming, RubyPlay). Проект включал реверс-инжиниринг работы игр, создание API для лобби на React, разработку Telegram-бота для управления клубами и терминалами. Реализована система формирования статистики в Excel, блокировки игр/терминалов, интеграция Unity-игр. Архитектура построена на NodeJS с использованием RabbitMQ, WebSockets, REST API и SOAP. Выполнял роль тимлида и техдиректора, координируя работу команды из 3 разработчиков. Платформа поддерживала более 300 игр с автоматической генерацией математики через SlotMachines.',
-    shortDescription: 'Игровая платформа с универсальным адаптером для слот-игр и реверс-инжинирингом',
+    title: 'Starsdeluxe.net – Игровая платформа и адаптер для слот-игр',
+    description: 'Разработка <strong>комплексной игровой платформы</strong> с универсальным адаптером для интеграции слот-игр различных провайдеров (<strong>Wazdan, Pragmatic Play, Greentube, Hacksaw Gaming, RubyPlay</strong>).<br/><br/>Проект включал <strong>реверс-инжиниринг работы игр</strong>, создание API для лобби на <strong>React</strong>, разработку <strong>Telegram-бота</strong> для управления клубами и терминалами.<br/><br/>Реализована система формирования статистики в <strong>Excel</strong>, блокировки игр/терминалов, интеграция <strong>Unity-игр</strong>. Архитектура построена на <strong>NodeJS</strong> с использованием <strong>RabbitMQ, WebSockets, REST API и SOAP</strong>.<br/><br/>Выполнял роль <strong>тимлида и техдиректора</strong>, координируя работу команды из 3 разработчиков. Платформа поддерживала <strong>более 300 игр</strong> с автоматической генерацией математики через SlotMachines.',
+    shortDescription: '<strong>Игровая платформа</strong> с универсальным адаптером для интеграции <strong>слот-игр</strong>',
     type: 'Gaming Platform',
     technologies: [
       { name: 'NodeJS', category: 'backend' },
@@ -186,8 +185,8 @@ export const projects: Project[] = [
     id: '18',
     slug: 'magento2-ajax-login-wishlist',
     title: 'Magento 2 Ajax Login & Wishlist',
-    description: 'Модуль для Magento 2, который значительно улучшает пользовательский опыт, добавляя современные AJAX-формы для входа, регистрации и работы со списком желаемого (wishlist) без перезагрузки страницы. Реализована валидация в реальном времени, интеграция с minicart и поддержка мультиязычности.',
-    shortDescription: 'Модуль для Magento 2 с AJAX авторизацией и списком желаний',
+    description: 'Модуль для <strong>Magento 2</strong>, который значительно улучшает пользовательский опыт, добавляя современные <strong>AJAX-формы</strong> для входа, регистрации и работы со списком желаемого (wishlist) без перезагрузки страницы.<br/><br/>Реализована <strong>валидация в реальном времени</strong>, интеграция с <strong>minicart</strong> и поддержка <strong>мультиязычности</strong>.',
+    shortDescription: 'Модуль для <strong>Magento 2</strong> с <strong>AJAX авторизацией</strong> и списком желаний',
     type: 'Magento 2 Module',
     technologies: [
       { name: 'PHP', category: 'backend' },
@@ -213,8 +212,8 @@ export const projects: Project[] = [
     id: '17',
     slug: 'funkylenses',
     title: 'FunkyLenses.com - Интернет-магазин контактных линз',
-    description: 'Разработка интернет-магазина контактных линз на платформе Magento 2. Создан полностью кастомный дизайн с нуля, реализована сложная система фильтрации и поиска товаров, интеграция с платежными системами и службами доставки. Особое внимание уделено мобильной версии и оптимизации производительности.',
-    shortDescription: 'Интернет-магазин контактных линз на Magento 2',
+    description: 'Разработка <strong>интернет-магазина контактных линз</strong> на платформе <strong>Magento 2</strong>. Создан <strong>полностью кастомный дизайн с нуля</strong>, реализована сложная система фильтрации и поиска товаров.<br/><br/>Интеграция с <strong>платежными системами и службами доставки</strong>. Особое внимание уделено <strong>мобильной версии и оптимизации производительности</strong>.',
+    shortDescription: '<strong>Интернет-магазин контактных линз</strong> на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -245,8 +244,8 @@ export const projects: Project[] = [
     id: '16',
     slug: 'magento-2-associated-products-stock-update',
     title: 'Magento 2 Associated Products Stock Update',
-    description: 'Модуль для Magento 2, который автоматизирует управление остатками связанных товаров. Синхронизирует количество на складе между основным и ассоциированными товарами, поддерживает гибкую настройку ассоциаций, импорт/экспорт CSV, логирование и расширяемость.',
-    shortDescription: 'Автоматизация остатков связанных товаров в Magento 2',
+    description: 'Модуль для <strong>Magento 2</strong>, который автоматизирует управление остатками связанных товаров. Синхронизирует количество на складе между основным и ассоциированными товарами.<br/><br/>Поддерживает <strong>гибкую настройку ассоциаций</strong>, <strong>импорт/экспорт CSV</strong>, логирование и расширяемость.',
+    shortDescription: 'Автоматизация остатков связанных товаров в <strong>Magento 2</strong>',
     type: 'Magento 2 Module',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -270,8 +269,8 @@ export const projects: Project[] = [
     id: '15',
     slug: 'magento-2-seo-hreflang',
     title: 'Magento 2 SEO Hreflang',
-    description: 'Модуль для Magento 2, который автоматически добавляет hreflang-теги на страницы сайта для улучшения SEO мультиязычных и мультирегиональных магазинов. Гибкая настройка, поддержка всех типов страниц, мультистор, расширяемость.',
-    shortDescription: 'Автоматизация hreflang для Magento 2',
+    description: 'Модуль для <strong>Magento 2</strong>, который автоматически добавляет <strong>hreflang-теги</strong> на страницы сайта для улучшения SEO мультиязычных и мультирегиональных магазинов.<br/><br/><strong>Гибкая настройка</strong>, поддержка всех типов страниц, <strong>мультистор</strong>, расширяемость.',
+    shortDescription: 'Автоматизация <strong>hreflang</strong> для <strong>Magento 2</strong>',
     type: 'Magento 2 Module',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -298,8 +297,8 @@ export const projects: Project[] = [
     id: '14',
     slug: 'maksoft-ai-assistant',
     title: 'AI-ассистент для внутренних процессов – MaksoftOptima',
-    description: 'Разработка внутреннего AI-ассистента на OpenAI API для автоматизации доступа к корпоративным регламентам. Интеграция с системой 1С. Применение LangChain и семантического поиска с embeddings для повышения точности и релевантности.',
-    shortDescription: 'AI-помощник для 1С на OpenAI API',
+    description: 'Разработка <strong>внутреннего AI-ассистента</strong> на <strong>OpenAI API</strong> для автоматизации доступа к корпоративным регламентам. Интеграция с системой <strong>1С</strong>.<br/><br/>Применение <strong>LangChain и семантического поиска с embeddings</strong> для повышения точности и релевантности.',
+    shortDescription: '<strong>AI-помощник</strong> для <strong>1С</strong> на <strong>OpenAI API</strong>',
     type: 'Telegram Bot',
     technologies: [
       { name: 'TypeScript', category: 'backend' },
@@ -324,8 +323,8 @@ export const projects: Project[] = [
     id: '13',
     slug: 'grainfather',
     title: 'Grainfather.com – полная разработка на Magento 2',
-    description: 'Разработка новой темы с нуля, обновление Magento 2, установка, обновление и написание новых модулей.',
-    shortDescription: 'Полный редизайн и обновление e-commerce на Magento 2',
+    description: 'Разработка <strong>новой темы с нуля</strong>, обновление <strong>Magento 2</strong>, установка, обновление и написание новых модулей.',
+    shortDescription: 'Полный редизайн и обновление <strong>e-commerce</strong> на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -353,8 +352,8 @@ export const projects: Project[] = [
     id: '12',
     slug: 'pinecraft',
     title: 'Pinecraft.com – миграция с Magento 1 на Magento 2',
-    description: 'Проведена полная миграция интернет-магазина с Magento 1 на Magento 2. Анализ старой версии, перенос базы данных, установка и разработка модулей, создание новой темы.',
-    shortDescription: 'Миграция крупного e-commerce на Magento 2',
+    description: 'Проведена <strong>полная миграция интернет-магазина</strong> с <strong>Magento 1 на Magento 2</strong>. Анализ старой версии, перенос базы данных, установка и разработка модулей.<br/><br/>Создание <strong>новой темы</strong>.',
+    shortDescription: 'Миграция крупного <strong>e-commerce</strong> на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 1', category: 'backend' },
@@ -380,8 +379,8 @@ export const projects: Project[] = [
     id: '11',
     slug: 'sabon',
     title: 'Sabon.com – поддержка и модуль Quiz',
-    description: 'Верстка главной страницы, разработка пользовательского модуля quiz, а также поддержка и расширение других компонентов сайта.',
-    shortDescription: 'Модуль Quiz и поддержка сайта на Magento 2',
+    description: '<strong>Верстка главной страницы</strong>, разработка пользовательского <strong>модуля quiz</strong>, а также поддержка и расширение других компонентов сайта.',
+    shortDescription: 'Модуль <strong>Quiz</strong> и поддержка сайта на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -408,8 +407,8 @@ export const projects: Project[] = [
     id: '10',
     slug: 'vitajuwel',
     title: 'Vitajuwel.us – поддержка Magento 2',
-    description: 'Обновление платформы Magento 2, поддержка сайта, верстка отдельных страниц, фиксы багов после обновлений.',
-    shortDescription: 'Поддержка и обновление Magento 2',
+    description: '<strong>Обновление платформы Magento 2</strong>, поддержка сайта, верстка отдельных страниц, <strong>фиксы багов после обновлений</strong>.',
+    shortDescription: 'Поддержка и обновление <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -436,7 +435,7 @@ export const projects: Project[] = [
     id: '9',
     slug: 'tassenfuzzi',
     title: 'Tassenfuzzi.de – улучшение дизайна и модулей',
-    description: 'Поддержка сайта на Magento 2, улучшение дизайна, доработка существующих модулей и изменение верстки некоторых страниц.',
+    description: 'Поддержка сайта на <strong>Magento 2</strong>, <strong>улучшение дизайна</strong>, доработка существующих модулей и изменение верстки некоторых страниц.',
     shortDescription: 'Поддержка сайта и улучшение верстки',
     type: 'E-commerce',
     technologies: [
@@ -464,8 +463,8 @@ export const projects: Project[] = [
   id: '8',
     slug: 'bakerdays',
     title: 'Bakerdays.com – улучшение интерфейса и функционала',
-    description: 'Расширение модулей и улучшение темы сайта. Изменения касались как внешнего вида, так и UX компонентов.',
-    shortDescription: 'Поддержка и UX-улучшения Magento 2',
+    description: '<strong>Расширение модулей и улучшение темы сайта</strong>. Изменения касались как внешнего вида, так и <strong>UX компонентов</strong>.',
+    shortDescription: 'Поддержка и <strong>UX-улучшения Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -494,8 +493,8 @@ export const projects: Project[] = [
     id: '7',
     slug: 'crazylenses',
     title: 'CrazyLenses.com – поддержка и модульная доработка',
-    description: 'Поддержка интернет-магазина на Magento 2. Установка необходимых модулей и мелкие правки темы.',
-    shortDescription: 'Поддержка магазина на Magento 2',
+    description: 'Поддержка <strong>интернет-магазина на Magento 2</strong>. Установка необходимых модулей и мелкие правки темы.',
+    shortDescription: 'Поддержка магазина на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -518,8 +517,8 @@ export const projects: Project[] = [
     id: '6',
     slug: 'snaintongolf',
     title: 'SnaintonGolf.co.uk – оптимизация админки',
-    description: 'Оптимизация административной панели магазина на Magento 2. Установка новых и настройка текущих модулей.',
-    shortDescription: 'Оптимизация админки на Magento 2',
+    description: '<strong>Оптимизация административной панели</strong> магазина на <strong>Magento 2</strong>. Установка новых и настройка текущих модулей.',
+    shortDescription: 'Оптимизация админки на <strong>Magento 2</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -544,8 +543,8 @@ export const projects: Project[] = [
     id: '5',
     slug: 'p-metr',
     title: 'P-metr.ru – парсер продуктов со старого сайта и перенос каталога',
-    description: 'Клиент потерял доступы к сайту и серверу. А доступы предыдущий разработчик предоставит только за высокую дополнительную оплату. Был написан парсер на Python, который собрал все продукты, после чего был создан новый сайт на платформе ReadyScript. Использованы PHP, JavaScript, CSS, HTML5 для нового сайта.',
-    shortDescription: 'Парсер и перенос каталога на ReadyScript',
+    description: 'Клиент потерял доступы к сайту и серверу. А доступы предыдущий разработчик предоставит только за высокую дополнительную оплату.<br/><br/>Был написан <strong>парсер на Python</strong>, который собрал все продукты, после чего был создан <strong>новый сайт на платформе ReadyScript</strong>. Использованы <strong>PHP, JavaScript, CSS, HTML5</strong> для нового сайта.',
+    shortDescription: '<strong>Парсер</strong> и перенос каталога на <strong>ReadyScript</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Python', category: 'backend' },
@@ -580,8 +579,8 @@ export const projects: Project[] = [
     id: '4',
     slug: 'gippokrat',
     title: 'Gippokrat.kz – миграция с Magento 2 на ReadyScript',
-    description: 'Миграция крупного сайта медицины с Magento 2 на ReadyScript из-за большого количества багов. Создание аналогичной темы, интеграции с 1С, Bitrix24 и другими API.',
-    shortDescription: 'Миграция сайта с Magento 2 на ReadyScript',
+    description: '<strong>Миграция крупного сайта медицины</strong> с <strong>Magento 2 на ReadyScript</strong> из-за большого количества багов.<br/><br/>Создание аналогичной темы, интеграции с <strong>1С, Bitrix24</strong> и другими API.',
+    shortDescription: 'Миграция сайта с <strong>Magento 2</strong> на <strong>ReadyScript</strong>',
     type: 'E-commerce',
     technologies: [
       { name: 'Magento 2', category: 'backend' },
@@ -612,8 +611,8 @@ export const projects: Project[] = [
     id: '3',
     slug: 'reklab',
     title: 'Reklab.ru – интернет-магазин и лендинги',
-    description: 'Разработка и поддержка сайтов компании Reklab на платформе ReadyScript. Создание тем, миграция баз данных, интеграция с Bitrix24 и системами размещения рекламы.',
-    shortDescription: 'Группа проектов на ReadyScript для Reklab',
+    description: 'Разработка и поддержка <strong>сайтов компании Reklab</strong> на платформе <strong>ReadyScript</strong>. Создание тем, миграция баз данных.<br/><br/>Интеграция с <strong>Bitrix24 и системами размещения рекламы</strong>.',
+    shortDescription: 'Группа проектов на <strong>ReadyScript</strong> для Reklab',
     type: 'E-commerce',
     technologies: [
       { name: 'ReadyScript', category: 'backend' },
@@ -643,7 +642,7 @@ export const projects: Project[] = [
     id: '2', 
     slug: 'kraski',
     title: 'Kraski.ru – интернет-магазин стройматериалов',
-    description: 'Поддержка сайта на MODX, оптимизация, доработка API-интеграций. Позже осуществлён перенос сайта на Bitrix с сохранением данных. Также сюда были перенесены данные с сайта svetoboev.ru.',
+    description: 'Поддержка сайта на <strong>MODX</strong>, оптимизация, доработка <strong>API-интеграций</strong>. Позже осуществлён <strong>перенос сайта на Bitrix</strong> с сохранением данных.<br/><br/>Также сюда были перенесены данные с сайта <strong>svetoboev.ru</strong>.',
     shortDescription: 'Поддержка и миграция сайта стройматериалов',
     type: 'E-commerce',
     technologies: [
@@ -675,8 +674,8 @@ export const projects: Project[] = [
     id: '1',
     slug: 'landing-systema-a',
     title: 'Systema-a.com – лендинг и модуль QR для админки',
-    description: 'Разработка лендинга на MODX и написание модуля для админки, который генерирует QR-код с уникальной ссылкой для получения документации с сайта. Реализована возможность загрузки документации через админку. Использованы PHP, JavaScript, HTML, CSS, ExtJS 3.0.',
-    shortDescription: 'Лендинг на MODX и QR-модуль для админки',
+    description: 'Разработка <strong>лендинга на MODX</strong> и написание модуля для админки, который генерирует <strong>QR-код с уникальной ссылкой</strong> для получения документации с сайта.<br/><br/>Реализована возможность <strong>загрузки документации через админку</strong>. Использованы <strong>PHP, JavaScript, HTML, CSS, ExtJS 3.0</strong>.',
+    shortDescription: 'Лендинг на <strong>MODX</strong> и <strong>QR-модуль</strong> для админки',
     type: 'Landing',
     technologies: [
       { name: 'MODX', category: 'backend' },

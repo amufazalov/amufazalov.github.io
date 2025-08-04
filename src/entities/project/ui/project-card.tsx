@@ -43,9 +43,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </h3>
         </Link>
         
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-          {project.shortDescription}
-        </p>
+        <p className="text-gray-600 text-sm mb-4 line-clamp-3" dangerouslySetInnerHTML={{ __html: project.shortDescription }}></p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 3).map((tech, index) => (
