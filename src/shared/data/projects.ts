@@ -2,6 +2,53 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: '23',
+    slug: 'alifakhrmosavi-official-site',
+    title: 'Ali FakhrMousavi — официальный сайт режиссера',
+    description: 'Разработка и развитие <strong>fullstack-платформы для официального сайта режиссера</strong> с публичной частью на <strong>Next.js 15</strong> и серверной API-частью на <strong>NestJS + TypeScript</strong>.<br/><br/>Реализованы: <strong>админ-панель</strong> для управления статьями, пользователями и флагами, защищенная аутентификация с <strong>JWT и 2FA</strong>, а также контентные разделы сайта (фильмы, галерея, медиа, контакты).<br/><br/>Архитектура построена на модульном подходе с использованием <strong>Prisma ORM</strong>, <strong>PostgreSQL</strong> и <strong>Redis</strong>, с упором на безопасность, SEO и масштабируемость.',
+    shortDescription: '<strong>Fullstack-платформа</strong>: публичный сайт на <strong>Next.js</strong> + защищенная админка и API на <strong>NestJS</strong>',
+    type: 'Web',
+    technologies: [
+      { name: 'TypeScript', category: 'backend' },
+      { name: 'Next.js', category: 'frontend' },
+      { name: 'React', category: 'frontend' },
+      { name: 'NestJS', category: 'backend' },
+      { name: 'Prisma', category: 'backend' },
+      { name: 'PostgreSQL', category: 'backend' },
+      { name: 'Redis', category: 'backend' },
+      { name: 'JWT', category: 'backend' },
+      { name: 'Chakra UI', category: 'frontend' },
+      { name: 'Vite', category: 'frontend' },
+      { name: 'Docker', category: 'devops' }
+    ],
+    company: { name: 'Freelance', logo: '/images/companies/freelance-logo.png', url: 'https://amufazalov.ru' },
+    image: '/images/projects/alifakhrmousavi.com/screenshot_764x430_8.webp',
+    images: [
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_1.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_2.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_3.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_4.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_5.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_6.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_7.webp',
+      '/images/projects/alifakhrmousavi.com/screenshot_764x430_8.webp',
+    ],
+    siteUrl: 'https://alifakhrmousavi.com/',
+    period: { start: 'август 2025', end: 'октябрь 2025' },
+    features: [
+      'Публичный сайт на Next.js 15 с App Router',
+      'Админ-панель для управления статьями, пользователями и флагами',
+      'JWT-аутентификация и защищенные роуты',
+      'Двухфакторная аутентификация (2FA)',
+      'NestJS API с модульной архитектурой',
+      'Prisma ORM для работы с PostgreSQL',
+      'Redis для хранения сессий и ускорения процессов',
+      'SEO-оптимизация и семантическая структура страниц',
+      'Адаптивный интерфейс для мобильных и десктопных устройств',
+      'Весртка с под ключ с нуля'
+    ]
+  },
+  {
     id: '22',
     slug: 'pick6-betting-tma',
     title: 'Pick 6 Horse Racing – MVP тотализаторной платформы для конных скачек',

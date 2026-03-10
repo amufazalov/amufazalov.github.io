@@ -3,6 +3,9 @@ import { personalInfo } from '../../shared/data';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const handleOpenContactModal = (): void => {
+    window.dispatchEvent(new Event('open-contact-modal'));
+  };
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -32,9 +35,13 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
+                <button
+                  type="button"
+                  onClick={handleOpenContactModal}
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
                   Контакты
-                </a>
+                </button>
               </li>
             </ul>
           </div>

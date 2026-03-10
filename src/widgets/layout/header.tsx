@@ -4,6 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const handleOpenContactModal = (): void => {
+    window.dispatchEvent(new Event('open-contact-modal'));
+  };
 
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -40,12 +43,13 @@ export const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="#contact"
+            <button
+              type="button"
+              onClick={handleOpenContactModal}
               className="btn-primary"
             >
               Связаться
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -86,13 +90,16 @@ export const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="#contact"
+              <button
+                type="button"
                 className="block px-3 py-2 text-base font-medium text-primary-600 hover:text-primary-700"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  handleOpenContactModal();
+                }}
               >
                 Связаться
-              </a>
+              </button>
             </div>
           </div>
         )}

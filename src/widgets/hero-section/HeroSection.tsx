@@ -2,6 +2,10 @@ import React from 'react';
 import { personalInfo } from '../../shared/data';
 
 export const HeroSection: React.FC = () => {
+  const handleOpenContactModal = (): void => {
+    window.dispatchEvent(new Event('open-contact-modal'));
+  };
+
   return (
     <section className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,12 +24,13 @@ export const HeroSection: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#contact" 
+              <button
+                type="button"
+                onClick={handleOpenContactModal}
                 className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
               >
                 Связаться
-              </a>
+              </button>
               <a 
                 href="#projects" 
                 className="inline-flex items-center justify-center px-8 py-4 border border-gray-300 text-gray-900 font-semibold rounded-lg hover:bg-gray-50 transition-colors duration-200"
