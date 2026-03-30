@@ -2,6 +2,49 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: '24',
+    slug: 'converta-group',
+    title: 'Converta Group — fullstack-платформа автоматизации объявлений и воронки Avito',
+    description: 'Разработка и развитие <strong>экосистемы Converta Group</strong>, включающей клиентское приложение, административную панель, backend API и Telegram-генератор объявлений.<br/><br/>Платформа построена на <strong>NestJS + TypeScript</strong> (сервер и бот-сервисы), <strong>React + Vite</strong> (клиент) и <strong>Next.js</strong> (админ-панель) с единой бизнес-логикой управления данными и контентом.<br/><br/>Реализованы интеграции с <strong>OpenAI</strong>, очередями задач через <strong>RabbitMQ</strong>, экспортом в CSV/Excel и инфраструктурой на <strong>PostgreSQL + Redis</strong>.',
+    shortDescription: '<strong>Fullstack-платформа Converta Group</strong>: клиент, админка, API и Telegram-бот с AI-генерацией',
+    type: 'AI',
+    technologies: [
+      { name: 'TypeScript', category: 'backend' },
+      { name: 'NestJS', category: 'backend' },
+      { name: 'React', category: 'frontend' },
+      { name: 'Vite', category: 'frontend' },
+      { name: 'Next.js', category: 'frontend' },
+      { name: 'Redux Toolkit', category: 'frontend' },
+      { name: 'Prisma', category: 'backend' },
+      { name: 'PostgreSQL', category: 'database' },
+      { name: 'Redis', category: 'backend' },
+      { name: 'RabbitMQ', category: 'backend' },
+      { name: 'OpenAI API', category: 'ai' },
+      { name: 'Telegram Bot API', category: 'backend' },
+      { name: 'Docker', category: 'devops' }
+    ],
+    company: { name: 'Handyweb', logo: '/images/companies/handyweb-logo.svg', url: 'https://handyweb.org' },
+    image: '/images/projects/app.converta.group/screenshot_764x430_1.webp',
+    images: [
+      '/images/projects/app.converta.group/screenshot_full_1.png',
+      '/images/projects/app.converta.group/2.png',
+      '/images/projects/app.converta.group/3.png',
+    ],
+    siteUrl: 'https://converta.group/',
+    period: { start: 'октябрь 2025', end: 'ноябрь 2025' },
+    features: [
+      'Backend API на NestJS с модульной архитектурой',
+      'Клиентское приложение на React + Vite (FSD-подход)',
+      'Админ-панель на Next.js для управления сущностями и пользователями',
+      'Telegram-бот для генерации и отправки контента',
+      'AI-генерация объявлений через OpenAI',
+      'Очереди задач и фоновые процессы на RabbitMQ',
+      'Экспорт данных в CSV/Excel для публикаций',
+      'Prisma ORM и PostgreSQL для хранения доменных данных',
+      'Redis для кеша и ускорения фоновых сценариев',
+    ]
+  },
+  {
     id: '23',
     slug: 'alifakhrmosavi-official-site',
     title: 'Ali FakhrMousavi — официальный сайт режиссера',
