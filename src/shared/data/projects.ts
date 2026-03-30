@@ -2,11 +2,49 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: '26',
+    slug: 'sibur-transcriber-bot',
+    title: 'Автоматизированная транскрибация видео и аудио через Telegram',
+    description: 'Разработка <strong>интеллектуального Telegram-бота</strong> для автоматической транскрибации медиафайлов с использованием <strong>AssemblyAI</strong> и структурирования контента через <strong>OpenAI GPT</strong>.<br/><br/>Реализована архитектура с <strong>локальным Telegram Bot API сервером</strong> для обработки файлов до 2 ГБ без ограничений, автоматическое извлечение аудиодорожек через <strong>ffmpeg</strong>, REST API на <strong>Flask</strong> для управления файлами.<br/><br/>Проект построен на принципах <strong>SOLID</strong> с разделением ответственности между сервисами, обработкой исключений на всех уровнях и детальным логированием операций. Используется для быстрой обработки записей совещаний, интервью и презентаций с генерацией структурированных транскриптов и саммари.',
+    shortDescription: '<strong>Telegram-бот для транскрибации</strong> медиафайлов с AI-анализом через <strong>AssemblyAI</strong> и <strong>OpenAI</strong>',
+    type: 'AI',
+    technologies: [
+      { name: 'Python', category: 'backend' },
+      { name: 'Flask', category: 'backend' },
+      { name: 'AssemblyAI', category: 'ai' },
+      { name: 'OpenAI API', category: 'ai' },
+      { name: 'Telegram Bot API', category: 'backend' },
+      { name: 'ffmpeg', category: 'backend' },
+      { name: 'Docker', category: 'devops' }
+    ],
+    company: { name: 'Handyweb', logo: '/images/companies/handyweb-logo.svg', url: 'https://handyweb.org' },
+    image: '/images/projects/sibur-transcriber-bot/0.png',
+    images: [
+      '/images/projects/sibur-transcriber-bot/1.png',
+      '/images/projects/sibur-transcriber-bot/2.png',
+      '/images/projects/sibur-transcriber-bot/3.png',
+    ],
+    siteUrl: '',
+    period: { start: 'февраль 2026', end: 'февраль 2026' },
+    features: [
+      'Автоматическая транскрибация видео и аудио через AssemblyAI',
+      'Структурирование транскриптов с таймкодами и репликами',
+      'Генерация саммари и ключевых тезисов через OpenAI GPT',
+      'Интеграция с локальным Telegram Bot API для обработки файлов до 2 ГБ',
+      'Извлечение аудиодорожек из видео через ffmpeg (MP3 192kbps)',
+      'REST API на Flask для управления аудиофайлами',
+      'Архитектура на принципах SOLID с изолированными сервисами',
+      'Обработка video, video_note и документов с медиаконтентом',
+      'Детальное логирование операций и обработка исключений',
+      'Отсутствие дублирования файлов благодаря прямой работе с локальным API'
+    ]
+  },
+  {
     id: '25',
     slug: 'sibur-ai-bot',
-    title: 'SIBUR Bot Template — AI Telegram-бот для генерации обложек и реврайта контента',
-    description: 'Разработка и развитие <strong>шаблона Telegram-бота для SIBUR</strong> с генерацией визуалов и текстового контента на базе <strong>OpenAI</strong>.<br/><br/>Реализованы задачи генерации обложек, сценарии фоновой обработки через <strong>RabbitMQ</strong>, интеграция с Telegram API и модульная архитектура на <strong>NestJS + TypeScript</strong>.<br/><br/>Проект используется как основа для быстрого запуска AI-воркфлоу под брендовые коммуникации и контент-операции.',
-    shortDescription: '<strong>AI Telegram-бот</strong> для генерации обложек и контента с очередями и модульной backend-архитектурой',
+    title: 'SIBUR Bot Template — масштабируемый AI-бот для автоматизации контент-производства для компании Сибур',
+    description: 'Разработка <strong>корпоративного шаблона Telegram-бота</strong> для автоматизации создания визуального и текстового контента с использованием <strong>OpenAI API</strong>.<br/><br/>Реализована <strong>асинхронная обработка задач</strong> через <strong>RabbitMQ</strong>, модульная архитектура на <strong>NestJS + TypeScript</strong> с разделением на независимые домены, интеграция с Telegram Bot API для управления воркфлоу.<br/><br/>Проект служит фундаментом для быстрого развертывания AI-решений в корпоративной среде, обеспечивая гибкую настройку промптов, масштабируемость через очереди сообщений и контейнеризацию.',
+    shortDescription: '<strong>Корпоративный AI-бот</strong> для автоматизации контент-производства с асинхронной обработкой через <strong>RabbitMQ</strong>',
     type: 'AI',
     technologies: [
       { name: 'TypeScript', category: 'backend' },
@@ -26,13 +64,14 @@ export const projects: Project[] = [
     siteUrl: '',
     period: { start: 'январь 2026', end: 'январь 2026' },
     features: [
-      'Генерация реврайта контента с помощью LLM/AI',
-      'Генерация обложек и креативов с помощью LLM/AI',
-      'Telegram-бот для запуска и управления генерацией',
-      'Фоновые задачи и очереди через RabbitMQ',
-      'Модульная backend-архитектура на NestJS',
-      'Гибкая настройка промптов и бизнес-логики',
-      'Шаблон для быстрого старта новых AI-контент-проектов'
+      'Генерация и реврайт текстового контента через LLM',
+      'Автоматическое создание визуальных обложек и креативов',
+      'Telegram-интерфейс для управления генерацией контента',
+      'Асинхронная обработка задач через RabbitMQ',
+      'Модульная архитектура на NestJS с dependency injection',
+      'Гибкая система конфигурации промптов',
+      'Шаблон для быстрого развертывания новых AI-проектов',
+      'Контейнеризация через Docker для упрощения деплоя'
     ]
   },
   {
