@@ -2,6 +2,40 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
+    id: '25',
+    slug: 'sibur-ai-bot',
+    title: 'SIBUR Bot Template — AI Telegram-бот для генерации обложек и реврайта контента',
+    description: 'Разработка и развитие <strong>шаблона Telegram-бота для SIBUR</strong> с генерацией визуалов и текстового контента на базе <strong>OpenAI</strong>.<br/><br/>Реализованы задачи генерации обложек, сценарии фоновой обработки через <strong>RabbitMQ</strong>, интеграция с Telegram API и модульная архитектура на <strong>NestJS + TypeScript</strong>.<br/><br/>Проект используется как основа для быстрого запуска AI-воркфлоу под брендовые коммуникации и контент-операции.',
+    shortDescription: '<strong>AI Telegram-бот</strong> для генерации обложек и контента с очередями и модульной backend-архитектурой',
+    type: 'AI',
+    technologies: [
+      { name: 'TypeScript', category: 'backend' },
+      { name: 'NestJS', category: 'backend' },
+      { name: 'OpenAI API', category: 'ai' },
+      { name: 'RabbitMQ', category: 'backend' },
+      { name: 'Telegram Bot API', category: 'backend' },
+      { name: 'Docker', category: 'devops' }
+    ],
+    company: { name: 'Handyweb', logo: '/images/companies/handyweb-logo.svg', url: 'https://handyweb.org' },
+    image: '/images/projects/tg-sibur-bot/0.png',
+    images: [
+      '/images/projects/tg-sibur-bot/1.png',
+      '/images/projects/tg-sibur-bot/2.png',
+      '/images/projects/tg-sibur-bot/3.png',
+    ],
+    siteUrl: '',
+    period: { start: 'январь 2026', end: 'январь 2026' },
+    features: [
+      'Генерация реврайта контента с помощью LLM/AI',
+      'Генерация обложек и креативов с помощью LLM/AI',
+      'Telegram-бот для запуска и управления генерацией',
+      'Фоновые задачи и очереди через RabbitMQ',
+      'Модульная backend-архитектура на NestJS',
+      'Гибкая настройка промптов и бизнес-логики',
+      'Шаблон для быстрого старта новых AI-контент-проектов'
+    ]
+  },
+  {
     id: '24',
     slug: 'converta-group',
     title: 'Converta Group — fullstack-платформа автоматизации объявлений и воронки Avito',
